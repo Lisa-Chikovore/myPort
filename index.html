@@ -4,173 +4,403 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LC Portfolio</title>
+
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-lc-v2.png">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="favicon-lc-v2.png"
+  >
 </head>
+
 <body>
 
-<div id="intro" class="intro">
-  <h1 class="initials">
+  <div id="intro" class="intro">
+    <h1 class="initials">
       L<span>C</span>
-  </h1>
-</div>
-
+    </h1>
+  </div>
 
   <header class="top">
-    <h1 class="logo"><span class="logo-highlight">L</span>isa Chikovore</h1>
-    <button class="hamburger" id="hamburger">☰</button>
+    <h1 class="logo">
+      <span class="logo-highlight">L</span>isa Chikovore
+    </h1>
+
+    <button
+      class="hamburger"
+      id="hamburger"
+      type="button"
+      aria-label="Open navigation menu"
+    >
+      ☰
+    </button>
+
     <nav class="menu" id="menu">
       <a href="#about">About me</a>
       <a href="#projects">Projects</a>
       <a href="#blog">Blog</a>
-      <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="intro-text">
-    <h3 class="what-i-do">Software Developer</h3>
-    <h1 class="my-name">Lisa</h1>
-    <p class="my-surname">Chikovore</p>
-    <p class="summary-what-i-do">
-    Building reliable, user-focused software solutions. Passionate about problem-solving, modern technologies, and turning ideas into functional applications.
-.
-    </p>
+  <main>
 
-    <div class="button-row">
-      <a href="https://www.linkedin.com/in/lisa-chikovore-476210262/" class="btn linkedin" target="_blank">
-        <i class="fa-brands fa-linkedin"></i> Connect
-      </a>
-      <a href="https://www.github.com/lisa-ce" class="btn github" target="_blank">
-        <i class="fa-brands fa-github"></i> GitHub
-      </a>
-      <a href="https://www.medium.com/@lisachikovore" class="blog-link" target="_blank">
-        <i class="fa-regular fa-file-lines"></i> Blog
-      </a>
-    </div>
-  </section>
+    <section class="intro-text">
+      <h3 class="what-i-do">Software Developer</h3>
 
-  <section id="about">
-    <h2 class="about-me">About Me</h2>
-    <p class="my-brief">
-I'm a Software Developer passionate about building practical, reliable, and user-focused applications. I enjoy solving problems, learning modern technologies, and developing solutions from idea to implementation. My experience includes frontend and full-stack development, with a growing focus on creating software that solves real-world problems.
+      <h1 class="my-name">Lisa</h1>
+      <p class="my-surname">Chikovore</p>
 
-    </p>
-    <h4>Certifications</h4>
-    <div class="card-container">
-      <div class="card">
-        <div class="year">July 2025</div>
-        <div class="card-title">Responsive Web Design</div>
-        <div class="provider">freeCodeCamp</div>
-        <a href="https://www.freecodecamp.org/certification/lisachikovore/responsive-web-design" target="_blank"><div class="card-arrow">›</div></a>
+      <p class="summary-what-i-do">
+        Building reliable, user-focused software solutions. Passionate about
+        problem-solving, modern technologies, and turning ideas into functional
+        applications.
+      </p>
+
+      <div class="button-row">
+        <a
+          href="https://www.linkedin.com/in/lisa-chikovore-476210262/"
+          class="btn linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          Connect
+        </a>
+
+        <a
+          href="https://www.github.com/lisa-ce"
+          class="btn github"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+
+        <a
+          href="https://www.medium.com/@lisachikovore"
+          class="blog-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-regular fa-file-lines"></i>
+          Blog
+        </a>
       </div>
+    </section>
 
-      <div class="card">
-        <div class="year">November 2025</div>
-        <div class="card-title">JavaScript Algorithms & Data Structures</div>
-        <div class="provider">freeCodeCamp</div>
-        <a href="https://freecodecamp.org/certification/lisachikovore/javascript-algorithms-and-data-structures" target="_blank"><div class="card-arrow">›</div></a>
-      </div>
-    </div>
-  </section>
+    <section id="about" class="content-section">
+      <h2 class="section-heading">About Me</h2>
 
-  <section id="projects">
-    <h2 class="about-me">Featured Projects</h2>
-    <p class="my-brief">A collection of projects showcasing my skills in software development, problem-solving, frontend development, and full-stack solutions.
-</p>
-    <div class="projects-wrapper">
+      <p class="section-description">
+        I'm a Software Developer passionate about building practical, reliable,
+        and user-focused applications. I enjoy solving problems, learning modern
+        technologies, and developing solutions from idea to implementation. My
+        experience includes frontend and full-stack development, with a growing
+        focus on creating software that solves real-world problems.
+      </p>
 
-      <div class="project-card">
-        <a href="https://github.com/Lisa-Chikovore/hostelMenu-for-nust" class="external-link" target="_blank">↗</a>
-        <h2 class="project-title">NustHostel Menu </h2>
-        <p class="project-description">A dashboard showing nust probable menu prediction system for hostel meals with weekly forecasting.</p>
-        <div class="tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">Mysql</span>
-          <span class="tag">PHP</span>
-          
+      <h3 class="subheading">Certifications</h3>
+
+      <div class="card-container">
+
+        <div class="card">
+          <div class="year">July 2025</div>
+
+          <div class="card-title">
+            Responsive Web Design
+          </div>
+
+          <div class="provider">
+            freeCodeCamp
+          </div>
+
+          <a
+            href="https://www.freecodecamp.org/certification/lisachikovore/responsive-web-design"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="card-arrow"
+            aria-label="View Responsive Web Design certification"
+          >
+            ›
+          </a>
         </div>
-      </div>
 
-    <div class="project-card">
-  <a href="https://hostess-kiwz.onrender.com/hostessFrontend.html" class="external-link" target="_blank">↗</a>
+        <div class="card">
+          <div class="year">November 2025</div>
 
-  <h2 class="project-title">Hostess</h2>
+          <div class="card-title">
+            JavaScript Algorithms & Data Structures
+          </div>
 
-  <p class="project-description">
-    A full-stack web application that helps users discover affordable short-term
-    guest house accommodation in Windhoek. Users can browse available guest houses,
-    filter them by amenities and location, and view prices and property information.
-    Property owners can also add new guest houses through the platform, with the
-    information stored in a MySQL database and retrieved through a Node.js API.
-  </p>
+          <div class="provider">
+            freeCodeCamp
+          </div>
 
-  <div class="tags">
-    <span class="tag">HTML</span>
-    <span class="tag">CSS</span>
-    <span class="tag">JavaScript</span>
-    <span class="tag">Node.js</span>
-    <span class="tag">Express.js</span>
-    <span class="tag">MySQL</span>
-    <span class="tag">REST API</span>
-  </div>
-</div>
-
-
-
-    </div>
-  </section>
-
-  <section id="blog">
-    <h2 class="about-me">My articles</h2>
-    <p class="my-brief">Sharing insights about computer science</p>
-    <div class="blog-container">
-      <div class="blog-card">
-        <a href="https://medium.com/@lisachikovore" class="blog-arrow" target="_blank">↗</a>
-        <p class="blog-date">Oct 2025</p>
-        <h3 class="blog-title">What happens when you feel "stuck"</h3>
-        <p class="blog-desc">Inner GPS – A reflection on navigating through moments of uncertainty and finding your direction again.</p>
-        <div class="blog-meta">
-          <i class="fa-regular fa-clock"></i><span>5 min read</span>
+          <a
+            href="https://freecodecamp.org/certification/lisachikovore/javascript-algorithms-and-data-structures"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="card-arrow"
+            aria-label="View JavaScript certification"
+          >
+            ›
+          </a>
         </div>
+
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <h2 class="section-heading">Featured Projects</h2>
+
+      <p class="section-description">
+        A collection of projects showcasing my skills in software development,
+        problem-solving, frontend development, full-stack development, and
+        software testing.
+      </p>
+
+      <div class="projects-wrapper">
+
+        <article class="project-card">
+
+          <a
+            href="https://github.com/Lisa-Chikovore/hostelMenu-for-nust"
+            class="external-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View NUST Hostel Menu project"
+          >
+            ↗
+          </a>
+
+          <h2 class="project-title">
+            NUST Hostel Menu
+          </h2>
+
+          <p class="project-description">
+            A full-stack hostel meal dashboard developed for NUST students.
+            The system displays upcoming meals and provides weekly menu
+            predictions, helping students know what meals are likely to be
+            available in advance. Meal information is stored in a MySQL
+            database and accessed through a PHP backend.
+          </p>
+
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Full-Stack</span>
+          </div>
+
+        </article>
+
+        <article class="project-card">
+
+          <a
+            href="https://hostess-kiwz.onrender.com/"
+            class="external-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Hostess application"
+          >
+            ↗
+          </a>
+
+          <h2 class="project-title">
+            Hostess
+          </h2>
+
+          <p class="project-description">
+            A full-stack web application that helps users discover affordable
+            short-term guest house accommodation in Windhoek. Users can browse
+            available guest houses, filter them by amenities and location, and
+            view prices and property information. Property owners can also add
+            new guest houses through the platform, with information stored in a
+            MySQL database and retrieved through a Node.js API.
+          </p>
+
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">REST API</span>
+          </div>
+
+        </article>
+
+        <article class="project-card">
+
+          <h2 class="project-title">
+            Software Verification & Validation
+          </h2>
+
+          <p class="project-description">
+            A software testing module where our team tested a client's
+            application to identify functional defects, UI issues, and
+            unexpected system behaviour. We designed and executed test cases,
+            performed unit testing using JUnit, and used Chrome DevTools to
+            inspect and troubleshoot application behaviour. Bugs were
+            documented with test results and supporting evidence in Excel,
+            while Trello was used to track testing tasks and identified issues.
+            The project concluded with a technical report and presentation of
+            our findings, defects, and recommendations to the client.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Software Testing</span>
+            <span class="tag">JUnit</span>
+            <span class="tag">Unit Testing</span>
+            <span class="tag">Chrome DevTools</span>
+            <span class="tag">Test Cases</span>
+            <span class="tag">Bug Reporting</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Trello</span>
+            <span class="tag">Documentation</span>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+    <section id="blog" class="content-section">
+      <h2 class="section-heading">My Articles</h2>
+
+      <p class="section-description">
+        Sharing insights about computer science, technology, and personal growth.
+      </p>
+
+      <div class="blog-container">
+
+        <article class="blog-card">
+
+          <a
+            href="https://medium.com/@lisachikovore"
+            class="blog-arrow"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Read article on Medium"
+          >
+            ↗
+          </a>
+
+          <p class="blog-date">
+            Oct 2025
+          </p>
+
+          <h3 class="blog-title">
+            What happens when you feel "stuck"
+          </h3>
+
+          <p class="blog-desc">
+            Inner GPS – A reflection on navigating through moments of
+            uncertainty and finding your direction again.
+          </p>
+
+          <div class="blog-meta">
+            <i class="fa-regular fa-clock"></i>
+            <span>5 min read</span>
+          </div>
+
+        </article>
+
+        <article class="blog-card">
+
+          <a
+            href="https://medium.com/@lisachikovore"
+            class="blog-arrow"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Read article on Medium"
+          >
+            ↗
+          </a>
+
+          <p class="blog-date">
+            Oct 2025
+          </p>
+
+          <h3 class="blog-title">
+            What is the Internet?
+          </h3>
+
+          <p class="blog-desc">
+            Breaking down the fundamentals of how the internet works and
+            connects us all.
+          </p>
+
+          <div class="blog-meta">
+            <i class="fa-regular fa-clock"></i>
+            <span>4 min read</span>
+          </div>
+
+        </article>
+
       </div>
 
-      <div class="blog-card">
-        <a href="https://medium.com/@lisachikovore" class="blog-arrow" target="_blank">↗</a>
-        <p class="blog-date">Oct 2025</p>
-        <h3 class="blog-title">What is the Internet?</h3>
-        <p class="blog-desc">Breaking down the fundamentals of how the internet works and connects us all.</p>
-        <div class="blog-meta">
-          <i class="fa-regular fa-clock"></i><span>4 min read</span>
-        </div>
-      </div>
-    </div>
-    <p class="view-all"><a href="https://medium.com/@lisachikovore">View all articles on Medium ↗</a></p>
-  </section>
+      <p class="view-all">
+        <a
+          href="https://medium.com/@lisachikovore"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View all articles on Medium ↗
+        </a>
+      </p>
+    </section>
 
-  <section class="connect-section" id="contact">
-    <h1>Let's Connect</h1>
-    <p class="subtitle">
-      Looking to collaborate on a web project, discuss frontend tech, or just want to say hello? I'd love to hear from you.
-    </p>
-    <div class="buttons">
-      <a href="https://www.linkedin.com/in/lisa-chikovore-476210262/" class="btn primary" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>Connect
-      </a>
-      <a href="mailto:lisachikovore@gmail.com" class="btn secondary">
-        <i class="fa-solid fa-envelope"></i>Send Email
-      </a>
-    </div>
-  </section>
+    <section class="connect-section" id="contact">
+
+      <h1>Let's Connect</h1>
+
+      <p class="subtitle">
+        Looking to collaborate on a software project, discuss technology, or
+        just want to say hello? I'd love to hear from you.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          href="https://www.linkedin.com/in/lisa-chikovore-476210262/"
+          class="btn primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          Connect
+        </a>
+
+        <a
+          href="mailto:lisachikovore@gmail.com"
+          class="btn secondary"
+        >
+          <i class="fa-solid fa-envelope"></i>
+          Send Email
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
 
   <footer>
-    <p>© 2026 Lisa Chikovore All rights reserved.</p>
-    <p>Built with passion for the web</p>
+    <p>© 2026 Lisa Chikovore. All rights reserved.</p>
+    <p>Built with passion for software development.</p>
   </footer>
-</div>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
